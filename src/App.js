@@ -4,7 +4,7 @@ import { useState } from 'react';
 import MovieCard from './components/MovieCard';
 import SearchIcon from './search.svg';
 const App = () => {
-  const API_URL = "http://www.omdbapi.com/?i=tt3896198&apikey=22cd9843";
+  const API_URL = "https://www.omdbapi.com/?i=tt3896198&apikey=22cd9843";
   const searchMovies = async (v) => {
     const response = await fetch(`${API_URL}&s=${v}`);
     const data = await response.json();
